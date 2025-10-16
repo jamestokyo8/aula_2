@@ -1,0 +1,15 @@
+name: Security Scan (Trivy)
+
+
+on:
+pull_request:
+branches: [ main ]
+push:
+branches: [ main ]
+
+
+jobs:
+trivy-scan:
+runs-on: ubuntu-latest
+steps:
+- name: Chec
